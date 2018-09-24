@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Avion
+comment0.text=\n\ Write\ a\ description\ of\ class\ Avion\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=placa\ piloto
+comment1.target=Avion(java.lang.String,\ Marino)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Avion\n
+comment2.params=coPiloto
+comment2.target=void\ setCopiloto(Marino)
+comment2.text=\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\n\n\ @param\ \ y\ \ a\ sample\ parameter\ for\ a\ method\n\ @return\ \ \ \ the\ sum\ of\ x\ and\ y\n
+comment3.params=
+comment3.target=boolean\ haycoPiloto()
+comment4.params=
+comment4.target=void\ setMarinos()
+numComments=5

@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Marino
+comment0.text=\n\ Write\ a\ description\ of\ class\ Marino\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=name
+comment1.target=Marino(java.lang.String)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Marino\n
+numComments=2
