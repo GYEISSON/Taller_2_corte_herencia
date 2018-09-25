@@ -11,4 +11,6 @@ comment3.params=
 comment3.target=boolean\ haycoPiloto()
 comment4.params=
 comment4.target=void\ setMarinos()
-numComments=5
+comment5.params=
+comment5.target=Marino\ getPiloto()
+numComments=6

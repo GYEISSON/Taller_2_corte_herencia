@@ -43,4 +43,8 @@ public class Avion extends Maquina
         if(hayCoPiloto) cantidadPersonas = 2;
         else cantidadPersonas =1;
     }
+    
+    public Marino getPiloto(){
+        return this.piloto;
+    }
 }

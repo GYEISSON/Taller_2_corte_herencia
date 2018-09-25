@@ -1,4 +1,6 @@
 import java.util.*;
+import javax.swing.*;
+
 /**
  * Write a description of class Flota here.
  *
@@ -9,19 +11,29 @@ public class Flota
 {
     // instance variables - replace the example below with your own
     private ArrayList<Maquina> maquinas;
-
+    private ArrayList<Marino> marinos;
+    
+    final JPanel panel = new JPanel();
     /**
      * Constructor for objects of class Flota
      */
     public Flota()
     {
         maquinas = new ArrayList<Maquina>();
+        marinos = new ArrayList<Marino>();
     }
 
     public void alNorte()
     {
+        
+
         for(Maquina machine : maquinas){
-            machine.setLatitud(machine.getPosiciones()[0]+10);
+            if(machine.getPosiciones()[0] <= 100){
+                machine.setLatitud(machine.getPosiciones()[0]+10);
+            }
+            else{
+                JOptionPane.showMessageDialog(panel,"BatallaNavalExcepcion");
+            }
         }
     }
     
@@ -91,4 +103,21 @@ public class Flota
         }
         return true;
     }
+    
+    /**
+     * An example of a method - replace this comment with your own
+     *
+     * @param  y  a sample parameter for a method
+     * @return    the sum of x and y
+     */
+    public ArrayList<Marino> pilotos()
+    {
+        for(Maquina machine: maquinas){
+            if(machine instanceof Avion){
+                marinos.add(machine.getPiloto());
+            }            
+        }
+        return marinos;
+    }
+
 }
