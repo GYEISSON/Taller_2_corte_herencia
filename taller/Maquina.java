@@ -45,7 +45,7 @@ public class Maquina
         posiciones.setLatitud(latitud);
     }
     
-    public int numPersonas(){
+    protected int numPersonas(){
         return cantidadPersonas;
     }
 }

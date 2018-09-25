@@ -53,17 +53,25 @@ public class Flota
     {
         int numeroMaquinasDebiles = 0;
         for(Maquina machine: maquinas){
-            if(machine instanceof Barco){
-                if (machine.numPersonas()<5) numeroMaquinasDebiles++;} 
-            else if(machine instanceof Avion){
-                if (machine.numPersonas()==1) numeroMaquinasDebiles++;
+            if(machine instanceof PortaAviones){
+                //revisar si es un barco debil
+                if(machine.numPersonas() < 5)numeroMaquinasDebiles++;
+                //if(machine.avionDebil())numeroMaquinasDebiles++;
             }
+            
+            
+            // if (machine.numPersonas()<5) numeroMaquinasDebiles++; 
+            // else if(machine instanceof Avion){
+                // if (machine.numPersonas()==1) numeroMaquinasDebiles++;
+            // }
+        
             // else if(machine instanceof PortaAviones){
                 // // if(machine)
             
-            // }
-        
-        }
+            
+     
+        //}
         return numeroMaquinasDebiles;
     }
+}
 }

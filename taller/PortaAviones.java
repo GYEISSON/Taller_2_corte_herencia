@@ -26,12 +26,11 @@ public class PortaAviones extends Barco
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public void avionDebil()
+    public boolean avionDebil()
     {
         for(Avion av: aviones){
             portaAvionDebil = (av.haycoPiloto())? true: false;
         }
-        
+        return portaAvionDebil;
     }
-
 }
