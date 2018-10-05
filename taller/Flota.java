@@ -24,9 +24,7 @@ public class Flota
     }
 
     public void alNorte()
-    {
-        
-
+    {        
         for(Maquina machine : maquinas){
             if(machine.getPosiciones()[0] <= 100){
                 machine.setLatitud(machine.getPosiciones()[0]+10);
@@ -119,5 +117,4 @@ public class Flota
         }
         return marinos;
     }
-
 }
