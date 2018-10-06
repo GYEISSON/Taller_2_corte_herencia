@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=AutoDestruirse
+comment0.text=\r\n\ Las\ maquinas\ tienen\ la\ capacidad\ de\ autodestruirse.\r\n\r\n
+comment1.params=
+comment1.target=void\ informe()
+comment2.params=
+comment2.target=void\ destruir()
+numComments=3

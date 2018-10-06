@@ -5,10 +5,11 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Marino
+public class Marino implements AutoDestruirse
 {
     // instance variables - replace the example below with your own
     private String nombre;
+    private String vida;
 
     /**
      * Constructor for objects of class Marino
@@ -18,5 +19,8 @@ public class Marino
         // initialise instance variables
         this.nombre = name;
     }
+    
+    public void informe(){}
+    public void destruir(){}
 
 }

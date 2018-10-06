@@ -5,7 +5,7 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Avion extends Maquina
+public class Avion extends Maquina implements AutoDestruirse
 {
     // instance variables - replace the example below with your own
     private String placa;
@@ -47,4 +47,10 @@ public class Avion extends Maquina
     public Marino getPiloto(){
         return this.piloto;
     }
+    
+    public boolean esDebil(){return true;}
+    
+    public void informe(){}
+    
+    public void destruir(){}
 }

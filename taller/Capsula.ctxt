@@ -1,9 +1,9 @@
 #BlueJ class context
-comment0.target=Nodriza
-comment0.text=\r\n\ Clase\ nodriza\ que\ tiene\ capsulas.\r\n
+comment0.target=Capsula
+comment0.text=\r\n\ Capsulas\ submarinas.\r\n
 comment1.params=
-comment1.target=Nodriza()
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Nodrisa\r\n
+comment1.target=Capsula()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Capsula\r\n
 comment2.params=
 comment2.target=boolean\ esDebil()
 comment3.params=

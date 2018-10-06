@@ -1,13 +1,9 @@
 import java.util.*;
 /**
- * Write a description of class Capsula here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Capsulas submarinas.
  */
-public class Capsula extends Maquina
+public class Capsula extends Maquina implements AutoDestruirse
 {
-    // instance variables - replace the example below with your own
     private ArrayList<Capsula> otrasCapsulas;
 
     /**
@@ -18,5 +14,9 @@ public class Capsula extends Maquina
         otrasCapsulas = new ArrayList<Capsula>();        
     }
     
+    public boolean esDebil(){return true;}
     
+    public void informe(){}
+    
+    public void destruir(){}
 }

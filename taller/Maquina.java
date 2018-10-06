@@ -38,4 +38,6 @@ public abstract class   Maquina
         return cantidadPersonas;
     }
     
+    public abstract boolean esDebil();
+    
 }

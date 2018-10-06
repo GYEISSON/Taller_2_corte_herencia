@@ -5,7 +5,7 @@ import java.util.*;
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Barco extends Maquina    
+public class Barco extends Maquina implements AutoDestruirse 
 {
     protected ArrayList<Marino> marinos;
     
@@ -30,4 +30,9 @@ public class Barco extends Maquina
     {
         cantidadPersonas = marinos.size();
     }
+    public boolean esDebil(){return true;}
+
+    public void informe(){}
+    
+    public void destruir(){}
 }
