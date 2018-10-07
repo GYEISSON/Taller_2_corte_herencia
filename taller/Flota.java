@@ -12,6 +12,7 @@ public class Flota
     // instance variables - replace the example below with your own
     private ArrayList<Maquina> maquinas;
     private ArrayList<Marino> marinos;
+    private ArrayList<Marino> pilotos;
     
     final JPanel panel = new JPanel();
     /**
@@ -96,18 +97,32 @@ public class Flota
     }
     
     /**
-     * An example of a method - replace this comment with your own
+     * retorna todos los pilotos de la flota.
      *
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
     public ArrayList<Marino> pilotos()
     {
-        for(Maquina machine: maquinas){
+        for(Maquina machine: maquinas){            
             if(machine instanceof Avion){
-                marinos.add(machine.getPiloto());
-            }            
+                pilotos.add(machine.getPiloto());
+            }
+            else if(machine instanceof PortaAvion){
+                ArrayList<Marino> new_ar = machine.getPilotos();
+                ArrayList<Marino> new_array = machine.getMarino();                
+                for(Marino mn: new_ar){
+                    if(marinos.contains(mn) && new_array.contains(mn) && !(pilotos.contains(mn))){
+                        pilotos.add(mn);
+                    }
+                    else{
+                        throw new  BatallaNavalException();
+                    }
+                }
+                
+            }
         }
-        return marinos;
+        return pilotos;
     }
+
 }
