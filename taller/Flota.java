@@ -39,9 +39,7 @@ public class Flota
             }
             catch(NullPointerException e){
                 JOptionPane.showMessageDialog(panel,"BatallaNavalExcepcion");
-            }
-                
-         
+            }                         
         }
     }
     
