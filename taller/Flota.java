@@ -37,7 +37,7 @@ public class Flota
             try{
                 machine.setLatitud(machine.getPosiciones()[0]+10);
             }
-            catch(NullPointerException e){
+            catch(BatallaNavalException e){
                 JOptionPane.showMessageDialog(panel,"BatallaNavalExcepcion");
             }                         
         }
