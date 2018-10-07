@@ -26,12 +26,22 @@ public class Flota
     public void alNorte()
     {        
         for(Maquina machine : maquinas){
+            /*
             if(machine.getPosiciones()[0] <= 100){
                 machine.setLatitud(machine.getPosiciones()[0]+10);
             }
             else{
                 JOptionPane.showMessageDialog(panel,"BatallaNavalExcepcion");
+            }*/
+            
+            try{
+                machine.setLatitud(machine.getPosiciones()[0]+10);
             }
+            catch(NullPointerException e){
+                JOptionPane.showMessageDialog(panel,"BatallaNavalExcepcion");
+            }
+                
+         
         }
     }
     
